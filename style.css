@@ -131,7 +131,6 @@ img {
 .hero {
   width: 100%;
   background-image: url("/assets/hero.jpg");
-  background-color: #cccccc;
   height: 100vh;
   background-attachment: fixed;
   background-position: center center;
