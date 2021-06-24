@@ -478,6 +478,10 @@ h2 {
     position: fixed;
   }
 
+  .header {
+    height: 5rem;
+  }
+
   .nav-menu-container {
     width: 100%;
   }

@@ -599,6 +599,7 @@ h2 {
 
   .logo {
     width: 100px;
+    padding-top: 3rem;
   }
 
   .nav-item {
@@ -652,6 +653,10 @@ h2 {
     position: fixed;
   }
 
+  .header {
+    height: 5rem;
+  }
+
   .hero {
     width: 100%;
   }
@@ -693,7 +698,7 @@ h2 {
 
   .hero-text {
     line-height: 1;
-    top: 30%;
+    top: 15%;
   }
 
   .hero-text1,
@@ -706,7 +711,7 @@ h2 {
     background-color: #ce1212;
     color: #fff;
     padding: 0.8rem 1.5rem;
-    top: 47%;
+    top: 32%;
   }
 
   .clients {
@@ -803,6 +808,7 @@ h2 {
     width: 100%;
     font-weight: bolder;
     padding-bottom: 1rem;
+    border-radius: 0;
   }
 
   .contact-title {
