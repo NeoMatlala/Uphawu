@@ -44,23 +44,28 @@
             <p class="desc">Have any enquiry or some feedback for us? <br>Please fill out the form below or contact us on our number(s) below.</p>
 
             <div class="form-wrap">
-                <div class="field-wrap">
-                    <div class="input"><label for="name">Name</label><pre></pre> <input type="text" id="name"></div>
-                    <div class="input"><label for="surname">Surname</label><pre></pre> <input type="text" id="surname"></div>
-                </div>
-
-                <div class="field-wrap">
-                    <div class="input"><label for="email">Email</label><pre></pre> <input type="text" id="email"></div>
-                </div>
-
-                <div class="message-wrap">
-                    <label for="message">Message</label><pre></pre><textarea rows="10" id='message'></textarea>
-                </div>
-
-                <button>Get In Touch</button>
+                <form action="https://formspree.io/f/xpzkjzgn" method="POST" id="my-form">
+                    <div class="field-wrap">
+                        <div class="input"><label for="name">Name</label><pre></pre> <input type="text" id="name" name='firstName' required></div>
+                        <div class="input"><label for="surname">Surname</label><pre></pre> <input type="text" id="surname" name='lastName' required></div>
+                    </div>
+    
+                    <div class="field-wrap">
+                        <div class="input"><label for="email">Email</label><pre></pre> <input type="email" id="email" name='email'></div>
+                    </div>
+    
+                    <div class="message-wrap">
+                        <label for="message">Message</label><pre></pre><textarea rows="10" id='message' name='message'></textarea>
+                    </div>
+    
+                    <button type='submit'>Get In Touch</button>
+                </form>
+                <div id="status"></div>
             </div>
         </div>
     </div>
     
+    <!--MAIN JS-->
+    <script src="contact.js"></script>
 </body>
 </html>

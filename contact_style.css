@@ -167,6 +167,36 @@ textarea {
   margin-top: 2rem;
 }
 
+#status {
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 1.9rem;
+  font-weight: bolder;
+}
+
+#status.success {
+  background-color: #4bb543;
+  animation: status 6s ease forwards;
+}
+
+#status.error {
+  background-color: #ce1212;
+  animation: status 6s ease forwards;
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
 /*--------------------------------- MEDIA QUERIES ---------------------------------------*/
 @media all and (min-width: 769px) and (max-width: 1600px) {
   .field-wrap input {

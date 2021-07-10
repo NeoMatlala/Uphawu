@@ -127,6 +127,19 @@ img {
   background-color: #fcfcfc;
 }
 
+.active-link {
+  background-color: #ce1212;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.scroll-header .active-link {
+  background-color: #ce1212;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: #fff;
+}
 /*---------------------- HERO ----------------------*/
 .hero {
   width: 100%;
