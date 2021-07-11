@@ -132,17 +132,13 @@ img {
 }
 
 .active-link {
-  background-color: #ce1212;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  color: #fff;
+  border-bottom: 3px solid #ce1212;
+  padding-top: 1rem;
 }
 
 .scroll-header .active-link {
-  background-color: #ce1212;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  color: #fff;
+  border-bottom: 3px solid #ce1212;
+  padding-top: 1rem;
 }
 
 /* ------------ ABOUT US --------------*/
