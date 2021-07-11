@@ -661,6 +661,7 @@ h2 {
   }
 }
 
+/* phones*/
 @media all and (max-width: 576px) {
   header {
     position: fixed;
@@ -711,20 +712,30 @@ h2 {
 
   .hero-text {
     line-height: 1;
-    top: 15%;
+    top: 40%;
   }
 
   .hero-text1,
   .hero-text2,
   .hero-text3 {
-    font-size: 30px;
+    font-size: 25px;
+  }
+
+  .hero {
+    background-color: #000;
+  }
+
+  .hero-img img {
+    width: 100%;
+    height: 40vh;
+    margin-top: 5rem;
   }
 
   .hero-btn {
     background-color: #ce1212;
     color: #fff;
     padding: 0.8rem 1.5rem;
-    top: 32%;
+    top: 60%;
   }
 
   .clients {
