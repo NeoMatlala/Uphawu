@@ -446,7 +446,8 @@ h2 {
   }
 
   .logo {
-    width: 100px;
+    width: 70px;
+    padding-top: 3rem;
   }
 
   .nav-item {
@@ -482,6 +483,12 @@ h2 {
   /* show menu*/
   .show-menu {
     top: 3rem;
+  }
+
+  .logo .footer-logo {
+    margin-bottom: 2rem;
+    width: 5rem;
+    height: 5rem;
   }
 }
 
