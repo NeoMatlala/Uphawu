@@ -46,3 +46,79 @@ gsap.from('.hero-btn', {opacity:0, duration:.5, delay:1, y:0})
 
 gsap.from('.logo, .nav__toggle', {opacity:0, duration:2, delay:1.5, y:25, ease:'expo.out', stagger:.2})
 gsap.from('.nav-item', {opacity:0, duration:2, delay:1, y:25, ease:'expo.out', stagger:.2})
+
+/* SLIDER SHANDIS */
+var slides = document.querySelectorAll('.slide');
+    var btns = document.querySelectorAll('.btn');
+    let currentSlide = 1;
+
+    // Javascript for image slider manual navigation
+    var manualNav = function(manual){
+      slides.forEach((slide) => {
+        slide.classList.remove('active');
+
+        btns.forEach((btn) => {
+          btn.classList.remove('active');
+        });
+      });
+
+      slides[manual].classList.add('active');
+      btns[manual].classList.add('active');
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        manualNav(i);
+        currentSlide = i;
+      });
+    });
+
+    // Javascript for image slider autoplay navigation
+    var repeat = function(activeClass){
+      let active = document.getElementsByClassName('active');
+      let i = 1;
+
+      var repeater = () => {
+        setTimeout(function(){
+          [...active].forEach((activeSlide) => {
+            activeSlide.classList.remove('active');
+          });
+
+        slides[i].classList.add('active');
+        btns[i].classList.add('active');
+        i++;
+
+        if(slides.length == i){
+          i = 0;
+        }
+        if(i >= slides.length){
+          return;
+        }
+        repeater();
+      }, 10000);
+      }
+      repeater();
+    }
+    repeat();
+
+    /* ----- MIXITUP FILTER PORTFOLIO ----- */
+const mixer = mixitup('.portfolio__container', {
+  selectors: {
+      target: '.portfolio__content'
+  },
+  animation: {
+      duration: 350
+  }
+});
+
+/* link active portfolio */
+const linkPortfolio = document.querySelectorAll('.portfolio__item')
+
+function activePortfolio(){
+  if(linkPortfolio){
+      linkPortfolio.forEach(l => l.classList.remove('active-portfolio'))
+      this.classList.add('active-portfolio')
+  }
+}
+
+linkPortfolio.forEach(l => l.addEventListener('click', activePortfolio))

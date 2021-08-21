@@ -18,7 +18,7 @@
         <i class="bx bx-chevron-up scrolltop__icon"></i>
     </a>
 
-    <div class="hero">
+    <div class="hero" >
         <!--NAVIGATION-->
         <header class='header' id='header'>
             <div class="nav bd-container" id="nav-menu2">
@@ -39,7 +39,7 @@
             </div>
         </header>
 
-        <div class="wrap">
+        <!-- <div class="wrap">
             <div class="hero-img">
                 <img src="assets/hero.jpg" alt="hero image">
             </div>
@@ -48,13 +48,56 @@
                 <h1 class="hero-text1">Material Testing</h1> <br>
                 <h1 class="hero-text2">Mechanical Testing</h1> <br>
                 <h1 class="hero-text3">Industrial Testing</h1> <br>
+            </div>
                 
-              </div>
+            <div>
               <a class="hero-btn" href="#about">Learn More</a>
             </div>
-        </div>
+        </div> -->
 
-        <!--  -->
+        <!-- slider container -->
+        <div class="img-slider">
+            <div class="slide active">
+                <div class=img-wrap>
+                    <img src="assets/hero1.png" alt="">
+                </div>
+              
+              <div class="info">
+                <h4>Energy Solutions</h4>
+                <h2>The simplest way to store energy.</h2>
+                <p>Uphawu's eBrick Ultra 175 is designed for installers who want a pre-installed, self-managed "plug-and-play" battery. <br><br> Ideal for replacing lead batteries in current installations as well as new self-consumption, off-grid facilities with needs ranging from 13 to 54 kWh.</p>
+              </div>
+            </div>
+            <div class="slide slide2">
+              <div class="info">
+                <h4>Metallurgical Services</h4>
+                <h2>Material Testing. <br> Mechanical Testing.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus earum, sit doloremque, unde architecto iure autem, ipsam maxime quo iusto aut obcaecati quia incidunt corrupti alias cum accusamus natus nostrum. <br><br> Nesciunt voluptate assumenda consectetur? Cum aut distinctio doloremque odio quisquam aliquam ut. Debitis provident ipsum doloremque iste?</p>
+              </div>
+
+              <div class=img-wrap>
+                <img src="assets/heor2.png" alt="">
+            </div>
+            </div>
+            <div class="slide slide3">
+                <div class=img-wrap>
+                    <img src="assets/hero3.png" alt="">
+                </div>
+              
+              <div class="info">
+                <h4>Industrial Commodity Supply</h4>
+                <h2>Material Testing. <br> Mechanical Testing.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus earum, sit doloremque, unde architecto iure autem, ipsam maxime quo iusto aut obcaecati quia incidunt corrupti alias cum accusamus natus nostrum. <br><br> Nesciunt voluptate assumenda consectetur? Cum aut distinctio doloremque odio quisquam aliquam ut. Debitis provident ipsum doloremque iste?</p>
+              </div>
+            </div>
+            
+            <div class="navigation">
+              <div class="btn active"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+            </div>
+        </div>
+    </div>
 
     <!--CLIENTS SECTION-->
     <div class="clients">
@@ -63,13 +106,14 @@
         <img src="assets/client3.jpg" alt="client3">
         <img src="assets/client4.jpg" alt="client4">
         <img src="assets/client5.jpg" alt="client5">
+        <img src="assets/client6.png" alt="client6" id='client6'>
     </div>
 
     <!--WHO ARE WE SECTION-->
     <div class="about" id="about">
         <div class="image-wrap">
             <img src="assets/about-img1.jpg" id="img1" alt="about section image">
-            <img src="assets/about-img2.jpg" id="img2" alt="about section image">
+            <img src="assets/about_2.png" id="img2" alt="about section image">
         </div>
 
         <div class="text-wrap">
@@ -81,8 +125,8 @@
     </div>
 
     <!--OUR SERVICES SECTION-->
-    <div class="services">
-        <h1 class="services-title">Our Services</h1>
+    <div class=" portfolio" id="portfolio">
+        <!-- <h1 class="services-title">Our Services</h1>
 
         <div class="cards1">
             <div class="card">
@@ -127,7 +171,105 @@
         <div class="cards1">
             
             
-        </div>
+        </div> -->
+            <h2 class=" services-title">Our Services</h2>
+
+            <div class="portfolio__nav">
+                <span class="portfolio__item active-portfolio" data-filter="all">All services</span>
+                <span class="portfolio__item" data-filter=".energy">Energy Solutions</span>
+                <span class="portfolio__item" data-filter=".metalurgical">Metallurgical Services</span>
+                <span class="portfolio__item" data-filter=".industrial">Industrial Commodity Supply</span>
+            </div>
+
+            <div class="portfolio__container bd-grid">
+                <div class="portfolio__content mix energy ">
+                    <a href="#"><img src="assets/zinc-air.png" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Zinc Air Batteries</span>
+                    </div>
+                </div>
+                <!--energy supply-->
+                <div class="portfolio__content mix energy">
+                    <a href="#"><img src="assets/lithium.png" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Lithium Iron Batteries</span>
+                    </div>
+                </div>
+
+                <div class="portfolio__content mix energy">
+                    <a href="#"><img src="assets/gas.png" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Gas Installations & Maintanance</span>
+                    </div>
+                </div>
+
+                <!--metalurgical services-->
+                <div class="portfolio__content mix metalurgical ">
+                    <a href="#"><img src="assets/mat-test.png" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Material Testing</span>
+                    </div>
+                </div>
+
+                <div class="portfolio__content mix metalurgical ">
+                    <a href="#"><img src="assets/mech-test.png" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Mechanical Testing</span>
+                    </div>
+                </div>
+
+                <!--industrial services-->
+                <div class="portfolio__content mix industrial ">
+                    <a href="#"><img src="assets/nuts.png" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Nuts & Bolts</span>
+                    </div>
+                </div>
+
+                <div class="portfolio__content mix industrial ">
+                    <a href="#"><img src="assets/lube.jpg" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Lubrication</span>
+                    </div>
+                </div>
+                <div class="portfolio__content mix industrial ">
+                    <a href="#"><img src="assets/cleaning.svg" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Cleaning Supplies</span>
+                    </div>
+                </div>
+                <div class="portfolio__content mix industrial ">
+                    <a href="#"><img src="assets/p-flex.png" alt="" class="portfolio__img p-flex"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Panel Flex Wire</span>
+                    </div>
+                </div>
+                <div class="portfolio__content mix industrial ">
+                    <a href="#"><img src="assets/chain.png" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Chains</span>
+                    </div>
+                </div>
+                <div class="portfolio__content mix industrial ">
+                    <a href="#"><img src="assets/rivets.svg" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Rivets</span>
+                    </div>
+                </div>
+                <div class="portfolio__content mix industrial ">
+                    <a href="#"><img src="assets/weld.png" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Welding machines & consumables</span>
+                    </div>
+                </div>
+                <div class="portfolio__content mix industrial ">
+                    <a href="#"><img src="assets/house.png" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Domestic cables & house wires</span>
+                    </div>
+                </div>
+
+            </div>
         
     </div>
 
@@ -151,15 +293,15 @@
     
             <div class="footer-right">
                 <div class="footer-column">
-                    <h2>Engineering supplies</h2>
+                    <h2>Energy Solutions</h2>
     
                     <ul class="box">
-                        <li>Nuts & Bolts</li>
-                        <li>Lubricants</li>
-                        <li>Cleaning Supplies</li>
-                        <li>Welding Supplies & Consumables</li>
-                        <li>Chains</li>
-                        <li>Riverts</li>
+                        <li>Zinc Air batteries</li>
+                        <li>Gas Installations & Maintanance</li>
+                        <h2 class='heading'>Metallurgical Services</h2>
+                        <li>Material Testing</li>
+                        <li>Mechanical Testing</li>
+                        <h2 class='heading'>Industrial Commodity Supply</h2>
                         <li>Domestic Cables & House Wires</li>
                         <li>Panel Flex Wire</li>
                     </ul>
@@ -208,6 +350,9 @@
             </div>
         </div>
     </footer>
+
+     <!--MIXITUP FILTER-->
+     <script src="mixitup.min.js"></script>
 
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
