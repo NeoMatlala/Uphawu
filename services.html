@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="True" name="HandheldFriendly">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="about_style.css"> <!--CSS STYLESHEET-->
+    <link rel="stylesheet" href="services_style.css"> <!--CSS STYLESHEET-->
     <script src="https://use.fontawesome.com/8c5e977b71.js"></script><!--FONT AWESOME-->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'><!--BOXICONS-->
-    <title>Uphawu | About Us</title>
+    <title>Uphawu | Home</title>
 </head>
 <body>
     <!--SCROLL TOP-->
@@ -18,18 +15,17 @@
         <i class="bx bx-chevron-up scrolltop__icon"></i>
     </a>
 
-    <div class="hero">
-
+    <div class="hero" >
         <!--NAVIGATION-->
         <header class='header' id='header'>
-            <div class="nav">
+            <div class="nav bd-container" id="nav-menu2">
                 <a href="index.html" class="logo"><img src="assets/Logo_Transparent Backgr-01.png" alt="logo" class=''></a>
 
                 <div class="nav-menu-container" id='nav-menu'>
                     <ul class="nav-list">
                         <li class='nav-item'><a href="index.html" class='nav-link'>Home</a></li>
-                        <li class='nav-item'><a href="about.html" class='nav-link active-link'>About Us</a></li>
-                        <li class='nav-item'><a href="services.html" class='nav-link'>Our Services</a></li>
+                        <li class='nav-item'><a href="about.html" class='nav-link'>About Us</a></li>
+                        <li class='nav-item'><a href="services.html" class='nav-link active-link'>Our Services</a></li>
                         <li class='nav-item'><a href="contact.html" class='nav-link'>Contact Us</a></li>
                     </ul>
                 </div>
@@ -41,47 +37,67 @@
         </header>
     </div>
 
-    <div class="about">
-        <h1 class="title">About Us</h1>
+    <div class="services-container">
+        <h1 class="title">Our Services</h1>
 
-        <div class="content-wrap">
-            <div class="img-wrap">
-                <img src="assets/about-us-2.jpg" alt="">
-            </div>
-
-            <div class="text-wrap">
-                <p class="desc">Uphawu Industrial Holdings (UIH) functions as a materials supply and consultancy institution. We conduct destructive & non-destructive testing, provide metallurgical advice and consultancy to ensure improved production of quality products. <br><br>
-                UIH also serves as a supplier of various industrial commodities across various sectors, these being safety wear as well as consumables.  This wing of the company has shown significant growth since its inception and continues to grow from strength to strength.<br><br>
-                With the prevailing uncertainty of electricity , a further need to look into storage of energy has been unavoidable . UIH is therefore focusing on providing customised energy alternatives to various industries  in the form of energy storage solutions and the replacement of electricity demands with LPG gas.
-                </p>
-            </div>
+        <!--WHO ARE WE SECTION-->
+    <div class="about" id="about">
+        <div class="image-wrap">
+            <img src="assets/lithium.png" id="img1" alt="about section image">
         </div>
 
-        <h1 class="title">Our Mission</h1>
-
-        <div class="card-wrap">
-            <div class="card">
-                <div class="img"><img src="assets/engineer-about.svg" alt=""></div>
-                <div class="text">Make a meaningful contribution in the engineering sector by providing a quality and reliable service.</div>
-            </div>
-            <div class="card">
-                <div class="img"><img src="assets/supplies-about.svg" alt=""></div>
-                <div class="text">Provide an unparalleled industrial supplies service.</div>
-            </div>
-            <div class="card">
-                <div class="img"><img src="assets/growth-about.svg" alt=""></div>
-                <div class="text">Ensure growth of our establishment by keeping  abreast of the latest developments in technology.</div>
-            </div>
-            <div class="card">
-                <div class="img"><img src="assets/mentorship-about.svg" alt=""></div>
-                <div class="text">Inculcate a principle of skills transfer by means of  training and mentorship programmes</div>
-            </div>
+        <div class="text-wrap">
+             <h1 class="section-title">Energy Solutions</h1>
+            <p class="desc">With the growing concern over reliable and cost effective  energy sources, Uphawu Industrial Holdings  has partnered with Cegasa (A battery manufacturer based in Spain) to offer Lithium ion and Zinc Air Alkaline batteries suitable for diverse applications. <br>
+                <ul>
+                    <li>Lithium ion batteries- Industrial cleaning equipment , Multi-functional lifting equipment , off grid installations</li>
+                    <li>Zinc air alkaline batteries- security systems, electric fencing, railway and road traffic  signalling, telecommunications , navigation aids</li>
+                </ul>
+            </p>
         </div>
     </div>
-    
 
-    <!--FOOTER-->
-    <footer class="footer">
+    <div class="about" id="about">
+        <div class="text-wrap">
+            <h1 class="section-title">Gas Installations,<br> Inspection & Maintenance</h1>
+           <p class="desc">We cater for both large and small companies. We are skilled at performing vapour and liquid gas installations. Our technicians are experienced and can handle all installation issues efficiently . Our precautionary measures include checking out that there are zero possibilities of gas pocket formation. Pressure regulators, shut-off valves, safety valves, flame arrestors and specialty burners are all critical components that ensure a safe industrial gas installation.</p>
+       </div>
+
+        <div class="image-wrap">
+            <img src="assets/Gas-Piping.jpg" id="img1" alt="about section image">
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="image-wrap">
+            <img src="assets/ndt.png" id="img1" alt="about section image">
+        </div>
+
+        <div class="text-wrap">
+             <h1 class="section-title">Metallurgical Services</h1>
+            <p class="desc">Uphawu metallurgical is a wing of our business that is concerned with the testing of engineering materials( ferrous and non-ferrous) ensuring material  suitability and intergrity for ultimate performance in service. <br><br>We offer:
+                <ul>
+                    <li>NDT ( non-destructive testing)- dye penetrant , ultrasonic testing , chemical analysis</li>
+                    <li>Mechanical testing – tensile, impact, hardness , creep and   fatigue testing</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="text-wrap">
+            <h1 class="section-title">Industrial Commodity Supply</h1>
+           <p class="desc">Uphawu supplies an array of industrial  supplies to different industries.  We pride ourselves in being able to meet our customers at their points of need and supply consumables and machinery that ensure  client  satisfaction and reduced down times .  Our offerings include and not limited to nuts and bolts, panel wire, lubricates , personal protective equipment.</p>
+       </div>
+
+        <div class="image-wrap">
+            <img src="assets/weld.png" id="img1" alt="about section image">
+        </div>
+    </div>
+    </div>
+    
+     <!--FOOTER-->
+     <footer class="footer">
         
         <div class="container">
             <div class="footer-left">
@@ -152,10 +168,13 @@
         </div>
     </footer>
 
+     <!--MIXITUP FILTER-->
+     <script src="mixitup.min.js"></script>
+
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 
-    <!--MAIN JS-->
-    <script src="about.js"></script>
+     <!--MAIN JS-->
+     <script src="services.js"></script>
 </body>
 </html>

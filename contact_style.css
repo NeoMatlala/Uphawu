@@ -57,8 +57,7 @@ img {
 
 .text {
   width: 45%;
-  height: 40rem; /*
-  background-color: black;*/
+  height: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
